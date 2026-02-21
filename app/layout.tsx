@@ -1,3 +1,4 @@
+import UniverseBackground from '@/components/UniverseBackground'
 import type { Metadata } from 'next'
 import { Manrope } from 'next/font/google'
 import './globals.css'
@@ -19,9 +20,10 @@ export default function RootLayout({
 	children: React.ReactNode
 }) {
 	return (
-		<html lang='en' className={manrope.variable}>
-			<body className='font-sans antialiased bg-background text-primary'>
-				{children}
+		<html lang='en'>
+			<body className='relative bg-background text-primary overflow-x-hidden font-sans antialiased'>
+				<UniverseBackground />
+				<div className='relative z-10'>{children}</div>
 			</body>
 		</html>
 	)

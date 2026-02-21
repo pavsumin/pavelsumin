@@ -6,15 +6,6 @@ import Header from '@/components/Header'
 export default function HeroSection() {
 	return (
 		<section className='h-[700px]'>
-			{/* ===== Universe Background ===== */}
-			<div className='absolute inset-0 -z-30 bg-background' />
-
-			<div className='absolute inset-0 -z-20'>
-				<div className='absolute w-[900px] h-[900px] -bottom-[300px] -left-[300px] bg-accent/20 rounded-full blur-[220px]' />
-				<div className='absolute w-[700px] h-[700px] -top-[200px] -right-[200px] bg-blue-400/15 rounded-full blur-[200px]' />
-				<div className='absolute w-[600px] h-[600px] top-[30%] left-[40%] bg-purple-400/10 rounded-full blur-[180px]' />
-			</div>
-
 			<div className='max-w-[1200px] mx-auto px-8 relative'>
 				<Header />
 				<div className='grid md:grid-cols-2 gap-16 pt-20 pb-32'>

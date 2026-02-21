@@ -23,7 +23,7 @@ export default function Header() {
 				</a>
 			</div>
 
-			<button className='flex items-center gap-3 px-4 py-2 border border-primary rounded-xl text-[14px] font-semibold hover:px-5 transition-all duration-300'>
+			<button className='flex items-center gap-3 px-4 py-2 border border-primary rounded-xl text-[14px] font-semibold hover:px-5 transition-all duration-300 cursor-pointer'>
 				<Image className='w-3.5' src={profilePic} alt='user' />
 				Contact
 			</button>
