@@ -1,9 +1,11 @@
+import Header from '@/components/Header'
 import HeroSection from '@/components/HeroSection'
 import WhySection from '@/components/WhySection'
 
 export default function Home() {
 	return (
-		<main className='relative bg-background overflow-hidden'>
+		<main className='relative bg-background overflow-hidden max-w-[1200px] mx-auto px-8'>
+			<Header />
 			<HeroSection />
 			<WhySection />
 		</main>
