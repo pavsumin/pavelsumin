@@ -1,63 +1,40 @@
 'use client'
 
-import { useEffect, useRef, useState } from 'react'
+import Tilt from 'react-parallax-tilt'
 
 export default function FloatingWindow() {
-	const ref = useRef<HTMLDivElement>(null)
-	const [rotation, setRotation] = useState({ x: 0, y: 0 })
-	const [lightPos, setLightPos] = useState({ x: 50, y: 50 })
-
-	useEffect(() => {
-		const handleMove = (e: MouseEvent) => {
-			if (!ref.current) return
-
-			const rect = ref.current.getBoundingClientRect()
-			const centerX = rect.left + rect.width / 2
-			const centerY = rect.top + rect.height / 2
-
-			const rotateY = ((e.clientX - centerX) / rect.width) * 10
-			const rotateX = ((centerY - e.clientY) / rect.height) * 10
-
-			setRotation({ x: rotateX, y: rotateY })
-
-			const lightX = ((e.clientX - rect.left) / rect.width) * 100
-			const lightY = ((e.clientY - rect.top) / rect.height) * 100
-
-			setLightPos({ x: lightX, y: lightY })
-		}
-
-		window.addEventListener('mousemove', handleMove)
-		return () => window.removeEventListener('mousemove', handleMove)
-	}, [])
-
 	return (
-		<div
-			ref={ref}
-			className='relative rounded-[28px] shadow-hero overflow-hidden transition-transform duration-200 ease-out'
-			style={{
-				transform:
-					'perspective(1200px) rotateX(${rotation.x}deg) rotateY(${rotation.y}deg)',
-			}}
-		>
-			{/* Chrome Top Bar */}
-			<div className='flex items-center gap-2 px-4 py-3 bg-gray-100 border-b border-gray-200'>
-				<div className='w-3 h-3 bg-red-500 rounded-full' />
-				<div className='w-3 h-3 bg-yellow-400 rounded-full' />
-				<div className='w-3 h-3 bg-green-500 rounded-full' />
-				<div className='ml-4 flex-1 bg-white/70 backdrop-blur-sm rounded-md h-6' />
-			</div>
+		<div className='relative w-full max-w-[560px] mx-auto'>
+			{/* Base Angle Wrapper */}
+			<div style={{ transform: 'rotateX(6deg) rotateY(-6deg)' }}>
+				<Tilt
+					tiltMaxAngleX={6}
+					tiltMaxAngleY={6}
+					perspective={1600}
+					transitionSpeed={900}
+					trackOnWindow={true}
+					tiltReverse={true}
+					glareEnable={true}
+					glareMaxOpacity={0.2}
+					glareColor='#ffffff'
+					glarePosition='all'
+					glareBorderRadius='28px'
+					className='rounded-[28px]'
+				>
+					<div className='relative rounded-[28px] overflow-hidden bg-white shadow-[0_50px_100px_-25px_rgba(0,0,0,0.25)]'>
+						{/* Chrome Bar */}
+						<div className='flex items-center gap-2 px-4 py-3 bg-gray-100 border-b border-gray-200'>
+							<div className='w-3 h-3 bg-red-500 rounded-full' />
+							<div className='w-3 h-3 bg-yellow-400 rounded-full' />
+							<div className='w-3 h-3 bg-green-500 rounded-full' />
+							<div className='ml-4 flex-1 bg-white/70 backdrop-blur-sm rounded-md h-6' />
+						</div>
 
-			{/* Content Area */}
-			<div className='relative bg-white aspect-[4/3] flex items-center justify-center text-muted text-lg'>
-				Your SaaS mockup here
-				{/* Light Follow Effect */}
-				<div
-					className='pointer-events-none absolute inset-0'
-					style={{
-						background:
-							'radial-gradient(circle at ${lightPos.x}% ${lightPos.y}%, rgba(37,99,235,0.25), transparent 60%)',
-					}}
-				/>
+						<div className='aspect-[4/3] flex items-center justify-center text-gray-500 text-lg bg-white'>
+							Your SaaS mockup here
+						</div>
+					</div>
+				</Tilt>
 			</div>
 		</div>
 	)

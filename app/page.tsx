@@ -81,7 +81,7 @@ export default function Home() {
 					</div>
 
 					{/* RIGHT */}
-					<div className='relative'>
+					<div className='relative flex justify-center md:justify-end'>
 						<FloatingWindow />
 					</div>
 				</section>
