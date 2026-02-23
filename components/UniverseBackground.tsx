@@ -1,14 +1,8 @@
 export default function UniverseBackground() {
 	return (
-		<div className='fixed inset-0 -z-50 pointer-events-none overflow-hidden'>
+		<div className='fixed top-[20px] bottom-[20px] left-0 right-0 -z-50 pointer-events-none overflow-hidden'>
 			{/* base color */}
 			<div className='absolute inset-0 bg-[#f8fafc]' />
-
-			{/* TOP MASK (чтобы не было резкого перехода к status bar) */}
-			<div className='absolute top-0 left-0 w-full h-[40px] bg-[#f8fafc]' />
-
-			{/* BOTTOM MASK (чтобы не было резкого края снизу) */}
-			<div className='absolute bottom-0 left-0 w-full h-[40px] bg-[#f8fafc]' />
 
 			{/* bottom-left glow */}
 			<div className='absolute w-[900px] h-[900px] -bottom-[300px] -left-[300px] bg-accent/20 rounded-full blur-[220px]' />
