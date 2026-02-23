@@ -1,6 +1,6 @@
 export default function UniverseBackground() {
 	return (
-		<div className='fixed top-[20px] bottom-[20px] left-0 right-0 -z-50 pointer-events-none overflow-hidden'>
+		<div className='hidden sm:block fixed inset-0 -z-50 pointer-events-none overflow-hidden'>
 			{/* base color */}
 			<div className='absolute inset-0 bg-[#f8fafc]' />
 
