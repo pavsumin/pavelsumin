@@ -8,30 +8,43 @@ const manrope = Manrope({
 })
 
 export const metadata = {
-	title: 'Pavel Sumin — Landing Pages for Early-Stage Startups',
+	metadataBase: new URL('https://pavelsumin.com'),
+
+	title: {
+		default: 'Pavel Sumin — Landing Page Designer for Early-Stage Startups',
+		template: '%s | Pavel Sumin',
+	},
+
 	description:
-		'I design and build high-converting landing pages for early-stage startups. Deep product immersion. Clear positioning. Built to convert.',
+		'I design and build high-converting landing pages for early-stage startups. Clear positioning. Deep product immersion. Built to convert.',
+
 	keywords: [
 		'landing page designer',
-		'early stage startup',
 		'startup landing page',
 		'conversion focused design',
+		'early stage startup',
+		'Pavel Sumin',
 	],
+
 	authors: [{ name: 'Pavel Sumin' }],
+
 	openGraph: {
-		title: 'Pavel Sumin — Landing Pages for Early-Stage Startups',
-		description: 'High-converting landing pages built for ambitious founders.',
+		title: 'Pavel Sumin — Landing Page Designer',
+		description: 'High-converting landing pages for early-stage startups.',
 		url: 'https://pavelsumin.com',
 		siteName: 'Pavel Sumin',
 		locale: 'en_US',
 		type: 'website',
-		images: [
-			{
-				url: '/og-image.png',
-				width: 1200,
-				height: 630,
-			},
-		],
+	},
+
+	twitter: {
+		card: 'summary_large_image',
+		title: 'Pavel Sumin — Landing Page Designer',
+		description: 'High-converting landing pages for early-stage startups.',
+	},
+
+	alternates: {
+		canonical: 'https://pavelsumin.com',
 	},
 }
 
@@ -45,6 +58,22 @@ export default function RootLayout({
 			<body className='relative bg-background text-primary overflow-x-hidden font-sans antialiased'>
 				<UniverseBackground />
 				<div className='relative z-10'>{children}</div>
+				<script
+					type='application/ld+json'
+					dangerouslySetInnerHTML={{
+						__html: JSON.stringify({
+							'@context': 'https://schema.org',
+							'@type': 'Person',
+							name: 'Pavel Sumin',
+							url: 'https://pavelsumin.com',
+							jobTitle: 'Landing Page Designer',
+							sameAs: [
+								'https://www.linkedin.com/in/pavel-sumin-434465388/',
+								'https://t.me/pazizz',
+							],
+						}),
+					}}
+				/>
 			</body>
 		</html>
 	)
