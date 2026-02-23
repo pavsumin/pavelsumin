@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 export default function WorkSection() {
 	return (
-		<section className='relative py-16'>
+		<section id='work' className='relative py-16'>
 			{/* ===== Section Header ===== */}
 			<div className='mb-16'>
 				<p className='text-sm uppercase tracking-widest text-muted mb-4'>
@@ -104,9 +104,12 @@ export default function WorkSection() {
 
 			{/* ===== CTA ===== */}
 			<div className='mt-20'>
-				<button className='px-8 py-4 bg-accent text-white rounded-2xl text-lg font-semibold shadow-button hover:brightness-110 transition-all duration-300 cursor-pointer'>
+				<a
+					href='#contact'
+					className='px-8 py-4 bg-accent text-white rounded-2xl text-lg font-semibold shadow-button hover:brightness-110 transition-all duration-300 cursor-pointer'
+				>
 					Launch Your Landing
-				</button>
+				</a>
 			</div>
 		</section>
 	)
