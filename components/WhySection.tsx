@@ -1,6 +1,6 @@
 export default function WhySection() {
 	return (
-		<section id='why' className='py-32 h-[auto]'>
+		<section id='why' className='h-[auto]'>
 			<div className='text-center max-w-[720px] mx-auto'>
 				<h2 className='text-[40px] md:text-[48px] font-semibold text-primary tracking-[-0.02em]'>
 					Why early-stage founders choose{' '}
