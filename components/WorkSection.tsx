@@ -110,7 +110,7 @@ export default function WorkSection() {
 			<div className='mt-20 mb-6 flex justify-center lg:justify-start'>
 				<a
 					href='#contact'
-					className='px-8 py-4 bg-accent text-white rounded-2xl text-lg font-semibold shadow-button hover:brightness-110 transition-all duration-300 cursor-pointer'
+					className='px-8 py-4 bg-accent text-white rounded-2xl text-lg font-semibold shadow-button hover:brightness-110 transition-all duration-300 cursor-pointer lg:hover:scale-102'
 				>
 					Launch Your Landing
 				</a>
