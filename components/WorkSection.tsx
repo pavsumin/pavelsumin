@@ -89,6 +89,7 @@ export default function WorkSection() {
 								alt='EatyWise Landing Preview'
 								width={428}
 								height={630}
+								loading='lazy'
 							></Image>
 						</a>
 

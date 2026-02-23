@@ -19,6 +19,7 @@ export default function Footer() {
 							width={30}
 							height={30}
 							alt='Fiverr'
+							loading='lazy'
 						></Image>
 					</a>
 
@@ -32,6 +33,7 @@ export default function Footer() {
 							width={30}
 							height={30}
 							alt='Telegram'
+							loading='lazy'
 						></Image>
 					</a>
 
@@ -45,6 +47,7 @@ export default function Footer() {
 							width={28}
 							height={28}
 							alt='LinkedIn'
+							loading='lazy'
 						></Image>
 					</a>
 
@@ -57,6 +60,7 @@ export default function Footer() {
 							width={30}
 							height={26}
 							alt='Gmail. pavsumin@gmail.com'
+							loading='lazy'
 						></Image>
 					</a>
 				</div>
