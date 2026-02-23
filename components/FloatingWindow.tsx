@@ -37,7 +37,7 @@ export default function FloatingWindow() {
 						{/* Mockup Image */}
 						<div className='relative aspect-[15/8] flex items-center justify-center text-gray-500 text-lg bg-white'>
 							<Image
-								src='/mockups/saas-landing-growIQ-croped.png'
+								src='/mockups/saas-landing-growIQ-croped.avif'
 								alt='SaaS Landing Preview'
 								fill
 								className='object-cover'

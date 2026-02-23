@@ -1,5 +1,4 @@
 import UniverseBackground from '@/components/UniverseBackground'
-import type { Metadata } from 'next'
 import { Manrope } from 'next/font/google'
 import './globals.css'
 
@@ -8,10 +7,25 @@ const manrope = Manrope({
 	variable: '--font-manrope',
 })
 
-export const metadata: Metadata = {
-	title: 'Pavel Sumin — Modern Landing Pages',
+export const metadata = {
+	title: 'Pavel Sumin — Landing Pages for Early-Stage Startups',
 	description:
-		'Modern, high-converting landing pages built with precision, performance and thoughtful design.',
+		'I design and build high-converting landing pages for early-stage startups. Deep product immersion. Clear positioning. Built to convert.',
+	keywords: [
+		'landing page designer',
+		'early stage startup',
+		'startup landing page',
+		'conversion focused design',
+	],
+	authors: [{ name: 'Pavel Sumin' }],
+	openGraph: {
+		title: 'Pavel Sumin — Landing Pages for Early-Stage Startups',
+		description: 'High-converting landing pages built for ambitious founders.',
+		url: 'https://pavelsumin.com',
+		siteName: 'Pavel Sumin',
+		locale: 'en_US',
+		type: 'website',
+	},
 }
 
 export default function RootLayout({
