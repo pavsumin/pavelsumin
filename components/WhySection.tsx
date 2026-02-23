@@ -55,8 +55,7 @@ export default function WhySection() {
 
 					<p className='mt-4 text-muted leading-[1.6]'>
 						I approach every project like a founder — focusing on clarity,
-						traction and real business impact. No fluff. No overdesign. Just
-						execution.
+						traction and real business impact.
 					</p>
 				</div>
 			</div>
