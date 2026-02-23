@@ -4,39 +4,38 @@ import FloatingWindow from '@/components/FloatingWindow'
 
 export default function HeroSection() {
 	return (
-		<section id='intro' className='h-[auto]'>
-			<div className='grid lg:grid-cols-2 gap-12 pt-20 mt-10 items-center'>
+		<section id='intro'>
+			<div className='grid md:grid-cols-2 gap-12 pt-10 md:pt-20 mt-4 md:mt-10 items-center'>
 				<div>
-					<h1 className='text-[42px] sm:text-[52px] lg:text-[40px] leading-[1.2] tracking-[-0.02em] font-semibold text-primary'>
+					<h1 className='text-[40px] sm:text-[48px] lg:text-[64px] leading-[1.15] tracking-[-0.02em] font-semibold text-primary'>
 						I design and build{' '}
 						<span className='text-accent'>landing pages</span> for early-stage
 						startups.
 					</h1>
 
-					<p className='mt-8 max-w-[520px] text-[18px] md:text-[20px] text-muted leading-[1.6]'>
+					<p className='mt-6 max-w-[520px] text-[16px] sm:text-[18px] md:text-[20px] text-muted leading-[1.6]'>
 						Deep product immersion. Clear positioning. Built for ambitious
 						early-stage founders.
 					</p>
 
-					<div className='mt-10 flex gap-5'>
+					<div className='mt-8 flex flex-col sm:flex-row gap-4'>
 						<a
 							href='#contact'
-							className='px-8 py-3.5 bg-accent text-white rounded-2xl text-[18px] font-bold shadow-button hover:brightness-110 duration-300 hover:scale-102 transition-all cursor-pointer'
+							className='w-full sm:w-auto px-8 py-3.5 bg-accent text-white rounded-2xl text-[18px] font-bold shadow-button hover:brightness-110 duration-300 transition-all'
 						>
 							Start a Project
 						</a>
 
 						<a
 							href='#work'
-							className='px-8 py-3.5 border-[1.5px] border-primary/60 rounded-2xl text-[16px] font-medium hover:px-10 transition-all duration-300 cursor-pointer'
+							className='w-full sm:w-auto px-8 py-3.5 border-[1.5px] border-primary/60 rounded-2xl text-[16px] font-medium hover:px-10 transition-all duration-300'
 						>
 							View Work
 						</a>
 					</div>
 				</div>
 
-				{/* RIGHT */}
-				<div className='z-0 flex justify-center md:justify-end'>
+				<div className='flex justify-center md:justify-end'>
 					<FloatingWindow />
 				</div>
 			</div>
