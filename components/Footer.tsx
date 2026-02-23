@@ -1,55 +1,43 @@
 export default function Footer() {
 	return (
-		<footer className='mt-32 pt-16 pb-10 border-t border-muted/40'>
-			<div className='flex flex-col md:flex-row md:justify-between gap-12'>
+		<footer className='border-t border-muted/40'>
+			<div className='flex items-center justify-between py-8 text-[14px] text-muted'>
 				{/* LEFT */}
-				<div>
-					<h3 className='text-[18px] font-semibold text-primary'>
-						Pavel Sumin
-					</h3>
-					<p className='mt-4 max-w-[320px] text-[15px] text-muted leading-[1.6]'>
-						Designing high-converting landing pages for early-stage founders.
-					</p>
-				</div>
+				<div>© {new Date().getFullYear()} Pavel Sumin</div>
 
 				{/* RIGHT */}
-				<div className='flex flex-col gap-4 text-[15px]'>
+				<div className='flex items-center gap-6'>
 					<a
 						href='https://t.me/yourtelegram'
 						target='_blank'
-						className='hover:text-accent transition-colors'
+						className='hover:text-accent transition-colors duration-300'
 					>
-						Telegram
+						TG
 					</a>
 
 					<a
 						href='https://linkedin.com/in/yourlinkedin'
 						target='_blank'
-						className='hover:text-accent transition-colors'
+						className='hover:text-accent transition-colors duration-300'
 					>
-						LinkedIn
+						LI
 					</a>
 
 					<a
 						href='https://fiverr.com/yourprofile'
 						target='_blank'
-						className='hover:text-accent transition-colors'
+						className='hover:text-accent transition-colors duration-300'
 					>
-						Fiverr
+						Fv
 					</a>
 
 					<a
 						href='mailto:your@email.com'
-						className='hover:text-accent transition-colors'
+						className='hover:text-accent transition-colors duration-300'
 					>
-						Email
+						✉
 					</a>
 				</div>
-			</div>
-
-			{/* Bottom line */}
-			<div className='mt-16 text-[13px] text-muted/70'>
-				© {new Date().getFullYear()} Pavel Sumin. All rights reserved.
 			</div>
 		</footer>
 	)
