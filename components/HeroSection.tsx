@@ -5,9 +5,9 @@ import FloatingWindow from '@/components/FloatingWindow'
 export default function HeroSection() {
 	return (
 		<section id='intro' className='h-[auto]'>
-			<div className='grid md:grid-cols-2 gap-16 pt-20 mt-10 items-center'>
+			<div className='grid lg:grid-cols-2 gap-12 pt-20 mt-10 items-center'>
 				<div>
-					<h1 className='text-[64px] md:text-[40px] leading-[1.25] tracking-[-0.02em] font-semibold text-primary'>
+					<h1 className='text-[42px] sm:text-[52px] lg:text-[40px] leading-[1.2] tracking-[-0.02em] font-semibold text-primary'>
 						I design and build{' '}
 						<span className='text-accent'>landing pages</span> for early-stage
 						startups.
