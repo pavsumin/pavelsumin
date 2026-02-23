@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 export default function Footer() {
 	return (
 		<footer className='border-t border-muted/40'>
@@ -8,34 +10,54 @@ export default function Footer() {
 				{/* RIGHT */}
 				<div className='flex items-center gap-6'>
 					<a
-						href='https://t.me/yourtelegram'
+						href='https://www.fiverr.com/s/KelxoNY'
 						target='_blank'
-						className='hover:text-accent transition-colors duration-300'
+						className='hover:scale-110 transition-transform duration-300'
 					>
-						TG
+						<Image
+							src={'/icons/Fiverr.svg'}
+							width={30}
+							height={30}
+							alt='Fiverr'
+						></Image>
 					</a>
 
 					<a
-						href='https://linkedin.com/in/yourlinkedin'
+						href='https://t.me/pazizz'
 						target='_blank'
-						className='hover:text-accent transition-colors duration-300'
+						className='hover:scale-110 transition-transform duration-300'
 					>
-						LI
+						<Image
+							src={'/icons/Telegram.svg'}
+							width={30}
+							height={30}
+							alt='Telegram'
+						></Image>
 					</a>
 
 					<a
-						href='https://fiverr.com/yourprofile'
+						href='https://www.linkedin.com/in/pavel-sumin-434465388/'
 						target='_blank'
-						className='hover:text-accent transition-colors duration-300'
+						className='hover:scale-110 transition-transform duration-300'
 					>
-						Fv
+						<Image
+							src={'/icons/LinkedIn.svg'}
+							width={28}
+							height={28}
+							alt='LinkedIn'
+						></Image>
 					</a>
 
 					<a
-						href='mailto:your@email.com'
-						className='hover:text-accent transition-colors duration-300'
+						href='mailto:pavsumin@gmail.com'
+						className='hover:scale-110 transition-transform duration-300'
 					>
-						✉
+						<Image
+							src={'/icons/Mail.svg'}
+							width={30}
+							height={26}
+							alt='Gmail. pavsumin@gmail.com'
+						></Image>
 					</a>
 				</div>
 			</div>
