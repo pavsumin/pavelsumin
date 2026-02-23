@@ -5,17 +5,17 @@ import FloatingWindow from '@/components/FloatingWindow'
 export default function HeroSection() {
 	return (
 		<section id='intro' className='h-[auto]'>
-			<div className='grid md:grid-cols-2 gap-16 pt-20 pb-32 mt-10'>
+			<div className='grid md:grid-cols-2 gap-16 pt-20 pb-32 mt-10 items-center'>
 				<div>
-					<h1 className='text-[64px] md:text-[44px] leading-[1.05] tracking-[-0.02em] font-semibold text-primary'>
+					<h1 className='text-[64px] md:text-[40px] leading-[1.25] tracking-[-0.02em] font-semibold text-primary'>
 						I design and build{' '}
-						<span className='text-accent'>modern landing pages</span> that
-						convert.
+						<span className='text-accent'>landing pages</span> for early-stage
+						startups.
 					</h1>
 
 					<p className='mt-8 max-w-[520px] text-[18px] md:text-[20px] text-muted leading-[1.6]'>
-						Clean engineering. Thoughtful design. Built for modern brands and
-						ambitious founders.
+						Deep product immersion. Clear positioning. Built for ambitious
+						early-stage founders.
 					</p>
 
 					<div className='mt-10 flex gap-5'>
