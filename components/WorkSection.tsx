@@ -102,7 +102,7 @@ export default function WorkSection() {
 					</div>
 
 					{/* subtle glow */}
-					<div className='absolute -z-10 w-[400px] h-[400px] bg-accent/15 blur-[140px] rounded-full -bottom-20 -right-20' />
+					<div className='absolute hidden md:block -z-10 w-[400px] h-[400px] bg-accent/15 blur-[140px] rounded-full -bottom-20 -right-20' />
 				</div>
 			</div>
 
