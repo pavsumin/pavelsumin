@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 export default function WorkSection() {
 	return (
-		<section className='relative py-32'>
+		<section className='relative py-16'>
 			{/* ===== Section Header ===== */}
 			<div className='mb-16'>
 				<p className='text-sm uppercase tracking-widest text-muted mb-4'>

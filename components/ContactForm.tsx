@@ -123,6 +123,7 @@ export default function ContactForm() {
           hover:scale-[1.02]
           transition-all
           disabled:opacity-50
+					cursor-pointer
         '
 			>
 				{status === 'loading' ? 'Sending…' : 'Start a Project'}
