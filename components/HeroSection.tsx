@@ -5,7 +5,7 @@ import FloatingWindow from '@/components/FloatingWindow'
 export default function HeroSection() {
 	return (
 		<section id='intro' className='h-[auto]'>
-			<div className='grid md:grid-cols-2 gap-16 pt-20 pb-32 mt-10 items-center'>
+			<div className='grid md:grid-cols-2 gap-16 pt-20 mt-10 items-center'>
 				<div>
 					<h1 className='text-[64px] md:text-[40px] leading-[1.25] tracking-[-0.02em] font-semibold text-primary'>
 						I design and build{' '}
