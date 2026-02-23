@@ -11,7 +11,7 @@ export const metadata = {
 	metadataBase: new URL('https://pavelsumin.com'),
 
 	title: {
-		default: 'Pavel Sumin — Landing Page Designer for Early-Stage Startups',
+		default: 'Pavel Sumin — Landing Pages Built for Early-Stage Startups',
 		template: '%s | Pavel Sumin',
 	},
 
@@ -29,7 +29,7 @@ export const metadata = {
 	authors: [{ name: 'Pavel Sumin' }],
 
 	openGraph: {
-		title: 'Pavel Sumin — Landing Page Designer',
+		title: 'Pavel Sumin — from Positioning to Launch',
 		description: 'High-converting landing pages for early-stage startups.',
 		url: 'https://pavelsumin.com',
 		siteName: 'Pavel Sumin',
@@ -39,7 +39,7 @@ export const metadata = {
 
 	twitter: {
 		card: 'summary_large_image',
-		title: 'Pavel Sumin — Landing Page Designer',
+		title: 'Pavel Sumin — from Positioning to Launch',
 		description: 'High-converting landing pages for early-stage startups.',
 	},
 
@@ -66,7 +66,7 @@ export default function RootLayout({
 							'@type': 'Person',
 							name: 'Pavel Sumin',
 							url: 'https://pavelsumin.com',
-							jobTitle: 'Landing Page Designer',
+							jobTitle: 'from Positioning to Launch',
 							sameAs: [
 								'https://www.linkedin.com/in/pavel-sumin-434465388/',
 								'https://t.me/pazizz',
@@ -74,6 +74,7 @@ export default function RootLayout({
 						}),
 					}}
 				/>
+				/
 			</body>
 		</html>
 	)
