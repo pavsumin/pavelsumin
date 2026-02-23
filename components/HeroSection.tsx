@@ -18,17 +18,17 @@ export default function HeroSection() {
 						early-stage founders.
 					</p>
 
-					<div className='mt-8 flex flex-col sm:flex-row gap-4'>
+					<div className='mt-8 flex flex-col min-[480px]:flex-row gap-4'>
 						<a
 							href='#contact'
-							className='w-full sm:w-auto px-8 py-3.5 bg-accent text-white rounded-2xl text-[18px] font-bold shadow-button hover:brightness-110 duration-300 transition-all'
+							className='w-full min-[480px]:w-auto text-center px-8 py-3.5 bg-accent text-white rounded-2xl text-[18px] font-bold shadow-button hover:brightness-110 transition-all duration-300'
 						>
 							Start a Project
 						</a>
 
 						<a
 							href='#work'
-							className='w-full sm:w-auto px-8 py-3.5 border-[1.5px] border-primary/60 rounded-2xl text-[16px] font-medium hover:px-10 transition-all duration-300'
+							className='w-full min-[480px]:w-auto text-center px-8 py-3.5 border-[1.5px] border-primary/60 rounded-2xl text-[16px] font-medium transition-all duration-300'
 						>
 							View Work
 						</a>
