@@ -8,7 +8,7 @@ import WorkSection from '@/components/WorkSection'
 
 export default function Home() {
 	return (
-		<main className='relative bg-background max-w-[1200px] mx-auto px-8'>
+		<main className='relative bg-none max-w-[1200px] mx-auto px-8'>
 			<Header />
 			<HeroSection />
 			<Separator />

@@ -55,7 +55,7 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang='en'>
-			<body className='relative bg-background text-primary overflow-x-hidden font-sans antialiased'>
+			<body className='relative bg-[#F8FAFC] text-primary overflow-x-hidden font-sans antialiased'>
 				<UniverseBackground />
 				<div className='relative z-10'>{children}</div>
 				<script
