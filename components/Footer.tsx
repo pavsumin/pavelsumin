@@ -22,8 +22,7 @@ export default function Footer() {
 				{/* RIGHT */}
 				<div
 					className='
-          flex items-center
-          gap-4 sm:gap-6
+          flex items-center sm:gap-6
         '
 				>
 					<a
@@ -35,7 +34,7 @@ export default function Footer() {
 							src='/icons/Fiverr.svg'
 							width={24}
 							height={24}
-							className='sm:w-[30px] sm:h-[30px]'
+							className='w-[30px] h-[30px]'
 							alt='Fiverr'
 							loading='lazy'
 						/>
@@ -50,7 +49,7 @@ export default function Footer() {
 							src='/icons/Telegram.svg'
 							width={24}
 							height={24}
-							className='sm:w-[30px] sm:h-[30px]'
+							className='w-[30px] h-[30px]'
 							alt='Telegram'
 							loading='lazy'
 						/>
@@ -65,7 +64,7 @@ export default function Footer() {
 							src='/icons/LinkedIn.svg'
 							width={22}
 							height={22}
-							className='sm:w-[28px] sm:h-[28px]'
+							className='w-[28px] h-[28px]'
 							alt='LinkedIn'
 							loading='lazy'
 						/>
@@ -79,7 +78,7 @@ export default function Footer() {
 							src='/icons/Mail.svg'
 							width={22}
 							height={20}
-							className='sm:w-[30px] sm:h-[26px]'
+							className='w-[30px] h-[26px]'
 							alt='Mail'
 							loading='lazy'
 						/>
