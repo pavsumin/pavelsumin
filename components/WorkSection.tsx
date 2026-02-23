@@ -105,7 +105,7 @@ export default function WorkSection() {
 			{/* ===== CTA ===== */}
 			<div className='mt-20'>
 				<button className='px-8 py-4 bg-accent text-white rounded-2xl text-lg font-semibold shadow-button hover:brightness-110 transition-all duration-300 cursor-pointer'>
-					Start a Project
+					Launch Your Landing
 				</button>
 			</div>
 		</section>
