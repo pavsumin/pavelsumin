@@ -3,24 +3,42 @@ import Image from 'next/image'
 export default function Footer() {
 	return (
 		<footer className='border-t border-muted/40'>
-			<div className='flex items-center justify-between py-8 text-[14px] text-muted'>
+			<div
+				className='
+        flex flex-col sm:flex-row
+        items-center
+        justify-center sm:justify-between
+        gap-6 sm:gap-0
+        py-8
+        text-[14px]
+        text-muted
+      '
+			>
 				{/* LEFT */}
-				<div>© {new Date().getFullYear()} Pavel Sumin</div>
+				<div className='text-center sm:text-left'>
+					© {new Date().getFullYear()} Pavel Sumin
+				</div>
 
 				{/* RIGHT */}
-				<div className='flex items-center gap-6'>
+				<div
+					className='
+          flex items-center
+          gap-4 sm:gap-6
+        '
+				>
 					<a
 						href='https://www.fiverr.com/s/KelxoNY'
 						target='_blank'
 						className='hover:scale-110 transition-transform duration-300'
 					>
 						<Image
-							src={'/icons/Fiverr.svg'}
-							width={30}
-							height={30}
+							src='/icons/Fiverr.svg'
+							width={24}
+							height={24}
+							className='sm:w-[30px] sm:h-[30px]'
 							alt='Fiverr'
 							loading='lazy'
-						></Image>
+						/>
 					</a>
 
 					<a
@@ -29,12 +47,13 @@ export default function Footer() {
 						className='hover:scale-110 transition-transform duration-300'
 					>
 						<Image
-							src={'/icons/Telegram.svg'}
-							width={30}
-							height={30}
+							src='/icons/Telegram.svg'
+							width={24}
+							height={24}
+							className='sm:w-[30px] sm:h-[30px]'
 							alt='Telegram'
 							loading='lazy'
-						></Image>
+						/>
 					</a>
 
 					<a
@@ -43,12 +62,13 @@ export default function Footer() {
 						className='hover:scale-110 transition-transform duration-300'
 					>
 						<Image
-							src={'/icons/LinkedIn.svg'}
-							width={28}
-							height={28}
+							src='/icons/LinkedIn.svg'
+							width={22}
+							height={22}
+							className='sm:w-[28px] sm:h-[28px]'
 							alt='LinkedIn'
 							loading='lazy'
-						></Image>
+						/>
 					</a>
 
 					<a
@@ -56,12 +76,13 @@ export default function Footer() {
 						className='hover:scale-110 transition-transform duration-300'
 					>
 						<Image
-							src={'/icons/Mail.svg'}
-							width={30}
-							height={26}
-							alt='Gmail. pavsumin@gmail.com'
+							src='/icons/Mail.svg'
+							width={22}
+							height={20}
+							className='sm:w-[30px] sm:h-[26px]'
+							alt='Mail'
 							loading='lazy'
-						></Image>
+						/>
 					</a>
 				</div>
 			</div>
