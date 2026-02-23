@@ -1,5 +1,7 @@
 'use client'
 
+import Image from 'next/image'
+
 export default function WorkSection() {
 	return (
 		<section className='relative py-32'>
@@ -20,7 +22,7 @@ export default function WorkSection() {
 			</div>
 
 			{/* ===== Main Layout ===== */}
-			<div className='grid lg:grid-cols-2 gap-20 items-center'>
+			<div className='grid lg:grid-cols-2 md:gap-40 gap-20 items-center'>
 				{/* ===== LEFT: Case Content ===== */}
 				<div className='space-y-10'>
 					{/* Challenge */}
@@ -61,7 +63,7 @@ export default function WorkSection() {
 					{/* Metrics Row */}
 					<div className='flex gap-10 pt-6'>
 						<div>
-							<p className='text-3xl font-semibold text-accent'>3</p>
+							<p className='text-3xl font-semibold text-accent'>4</p>
 							<p className='text-sm text-muted'>Core narrative blocks</p>
 						</div>
 
@@ -78,12 +80,21 @@ export default function WorkSection() {
 				</div>
 
 				{/* ===== RIGHT: Mockup Area ===== */}
-				<div className='relative'>
-					<div className='relative rounded-[28px] overflow-hidden shadow-hero border border-primary/10'>
+				<div className='relative perspective w-[428px]'>
+					<div className='relative preview-tilt rounded-[28px] overflow-hidden'>
 						{/* Placeholder mockup image */}
-						<div className='aspect-[16/10] bg-gradient-to-br from-background via-white to-background flex items-center justify-center text-muted'>
+						<a href='https://eatywise.vercel.app/' target='_blank'>
+							<Image
+								src={'/mockups/EatyWise-landing-80.avif'}
+								alt='EatyWise Landing Preview'
+								width={428}
+								height={630}
+							></Image>
+						</a>
+
+						{/* <div className='aspect-[16/10] bg-gradient-to-br from-background via-white to-background flex items-center justify-center text-muted'>
 							EatyWise Landing Preview
-						</div>
+						</div> */}
 					</div>
 
 					{/* subtle glow */}
