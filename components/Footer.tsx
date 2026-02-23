@@ -22,7 +22,7 @@ export default function Footer() {
 				{/* RIGHT */}
 				<div
 					className='
-          flex items-center sm:gap-6
+          flex items-center gap-6
         '
 				>
 					<a
