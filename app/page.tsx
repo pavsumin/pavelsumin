@@ -1,4 +1,5 @@
 import ContactSection from '@/components/ContactSection'
+import Footer from '@/components/Footer'
 import Header from '@/components/Header'
 import HeroSection from '@/components/HeroSection'
 import WhySection from '@/components/WhySection'
@@ -12,6 +13,7 @@ export default function Home() {
 			<WhySection />
 			<WorkSection />
 			<ContactSection />
+			<Footer />
 		</main>
 	)
 }
