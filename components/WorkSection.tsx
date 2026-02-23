@@ -4,7 +4,10 @@ import Image from 'next/image'
 
 export default function WorkSection() {
 	return (
-		<section id='work' className='relative'>
+		<section
+			id='work'
+			className='relative overflow-hidden lg: overflow-visible'
+		>
 			{/* ===== Section Header ===== */}
 			<div className='mb-16'>
 				<p className='text-sm uppercase tracking-widest text-muted mb-4'>
@@ -22,7 +25,7 @@ export default function WorkSection() {
 			</div>
 
 			{/* ===== Main Layout ===== */}
-			<div className='grid lg:grid-cols-2 md:gap-40 gap-20 items-center'>
+			<div className='grid lg:grid-cols-2 gap-20 lg:gap-40 items-center'>
 				{/* ===== LEFT: Case Content ===== */}
 				<div className='space-y-10'>
 					{/* Challenge */}
@@ -80,7 +83,7 @@ export default function WorkSection() {
 				</div>
 
 				{/* ===== RIGHT: Mockup Area ===== */}
-				<div className='relative perspective w-[428px]'>
+				<div className='relative perspective w-full max-w-[428px] mx-auto lg:mx-0'>
 					<div className='relative preview-tilt rounded-[28px] overflow-hidden'>
 						{/* Placeholder mockup image */}
 						<a href='https://eatywise.vercel.app/' target='_blank'>
@@ -104,7 +107,7 @@ export default function WorkSection() {
 			</div>
 
 			{/* ===== CTA ===== */}
-			<div className='mt-20 mb-6'>
+			<div className='mt-20 mb-6 flex justify-center lg:justify-start'>
 				<a
 					href='#contact'
 					className='px-8 py-4 bg-accent text-white rounded-2xl text-lg font-semibold shadow-button hover:brightness-110 transition-all duration-300 cursor-pointer'
