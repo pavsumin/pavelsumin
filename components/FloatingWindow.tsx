@@ -46,7 +46,6 @@ export default function FloatingWindow() {
 		<div
 			ref={previewRef}
 			className='relative rounded-[28px] overflow-hidden bg-white shadow-[0_50px_100px_-25px_rgba(0,0,0,0.25)] transition-transform duration-200 will-change-transform'
-			style={{ transform: 'rotateX(6deg) rotateY(-6deg)' }}
 		>
 			{/* Chrome Bar */}
 			<div className='flex items-center gap-2 px-4 py-3 bg-back border-b border-back'>
