@@ -1,47 +1,52 @@
 'use client'
 
+import Reveal from '@/components/Reveal'
 import profilePic from '@/public/icons/user.svg'
 import Image from 'next/image'
 
 export default function Header() {
 	return (
-		<nav
-			id='header'
-			className='flex items-center justify-between py-8 border-b-[0.5px] border-muted/50'
-		>
-			<div className='text-[20px] font-semibold text-primary'>Pavel Sumin</div>
+		<Reveal>
+			<nav
+				id='header'
+				className='flex items-center justify-between py-8 border-b-[0.5px] border-muted/50'
+			>
+				<div className='text-[20px] font-semibold text-primary'>
+					Pavel Sumin
+				</div>
 
-			<div className='hidden md:flex items-center gap-10 text-[15px]'>
-				<a href='#header' className='text-accent transition-all duration-300'>
-					Home
-				</a>
-				<a
-					href='#why'
-					className='hover:text-accent transition-all duration-300'
-				>
-					About
-				</a>
-				<a
-					href='#work'
-					className='hover:text-accent transition-all duration-300'
-				>
-					Work
-				</a>
+				<div className='hidden md:flex items-center gap-10 text-[15px]'>
+					<a href='#header' className='text-accent transition-all duration-300'>
+						Home
+					</a>
+					<a
+						href='#why'
+						className='hover:text-accent transition-all duration-300'
+					>
+						About
+					</a>
+					<a
+						href='#work'
+						className='hover:text-accent transition-all duration-300'
+					>
+						Work
+					</a>
+					<a
+						href='#contact'
+						className='hover:text-accent transition-all duration-300'
+					>
+						Contact
+					</a>
+				</div>
+
 				<a
 					href='#contact'
-					className='hover:text-accent transition-all duration-300'
+					className='flex items-center gap-3 px-4 py-2 border border-primary rounded-xl text-[14px] font-semibold hover:px-5 transition-all duration-300 cursor-pointer'
 				>
+					<Image className='w-3.5' src={profilePic} alt='user' />
 					Contact
 				</a>
-			</div>
-
-			<a
-				href='#contact'
-				className='flex items-center gap-3 px-4 py-2 border border-primary rounded-xl text-[14px] font-semibold hover:px-5 transition-all duration-300 cursor-pointer'
-			>
-				<Image className='w-3.5' src={profilePic} alt='user' />
-				Contact
-			</a>
-		</nav>
+			</nav>
+		</Reveal>
 	)
 }
